@@ -1,0 +1,12 @@
+#site_main{
+    background-color: #dddddd;    
+}
+
+.icon_card {
+    flex-basis: 20%;
+    box-shadow: 2px 2px 2px grey;
+    border-radius: 10px;
+    background-color: white;
+    margin-right: 40px;
+    margin-bottom: 50px;
+}

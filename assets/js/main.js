@@ -3,7 +3,7 @@
 // Milestone 2 Coloriamo le icone per tipo
 // Milestone 3 Creiamo una select con i tipi di icone e usiamola per filtrare le icone
 
-const cards = [
+const icons = [
 	{
 		name: 'cat',
 		prefix: 'fa-',
@@ -101,7 +101,28 @@ const cards = [
 		family: 'fas'
 	}
 ];
-
-// Partendo dalla seguente struttura dati , mostriamo in pagina tutte le icone disponibili.
 // Milestone 2 Coloriamo le icone per tipo
+ const iconsElem = document.getElementById("icons")
+ let iconColour = "black"
+
+ icons.forEach(icon => {
+    const {name, prefix, type, family} = icon;
+
+    if (type === 'animal') {
+        iconColour = '#0051ff';
+    } else if (type === 'vegetable') {
+        iconColour = 'orange';
+    } else if (type === 'user') {
+        iconColour = '#7f227f';
+    }
+    
+    iconsElem.insertAdjacentHTML('beforeend', 
+    `
+    <div class="icon_card d-flex flex-column justify-content-center align-items-center pt-3 pb-2">
+        <i class="${family} ${prefix}${name}" style="color: ${iconColour}; font-size: 40px;"></i>
+        <span class="text-uppercase my-1">${name}</span>
+    </div>
+    `);
+ });
+
 // Milestone 3 Creiamo una select con i tipi di icone e usiamola per filtrare le icone
