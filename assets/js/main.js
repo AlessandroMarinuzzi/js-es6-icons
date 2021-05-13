@@ -101,6 +101,7 @@ const icons = [
 		family: 'fas'
 	}
 ];
+console.log(icons);
 // Milestone 2 Coloriamo le icone per tipo
  const iconsElem = document.getElementById("icons")
  let iconColour = "black"
@@ -129,7 +130,7 @@ const icons = [
  });
 
 // Milestone 3 Creiamo una select con i tipi di icone e usiamola per filtrare le icone
-const selectElem = document.getElementById("filter");
+const selectElem = document.getElementById("filters");
 
 selectElem.addEventListener("change", function(){
     iconsElem.innerHTML="";
