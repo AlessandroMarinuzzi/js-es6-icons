@@ -1,3 +1,11 @@
+.title{
+    color: #28b1dd;
+}
+
+#filter {
+    background-color: #28b1dd;
+} 
+
 #site_main{
     background-color: #dddddd;    
 }
